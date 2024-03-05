@@ -1,9 +1,12 @@
 import express from "express";
 import env from "dotenv/config";
-import authRoutes from "./routes/authRoute.js";
-import messageRoutes from "./routes/messageRoute.js";
-import dbConnection from "./db/dbConnection.js";
 import cookieParser from "cookie-parser";
+
+
+import dbConnection from "./db/dbConnection.js";
+import authRoutes from "./routes/authRoutes.js";
+import messageRoutes from "./routes/messageRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,6 +16,7 @@ app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
+app.use("/api/users", userRoutes);
 
 app.listen(PORT, () => {
   dbConnection();
