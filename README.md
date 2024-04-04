@@ -31,7 +31,7 @@ This command will install all the dependencies specified in the `package.json` f
 
 2. **Install Dependencies**: 
     ```
-    cd chat-application
+    cd ChatApp
     npm install
     ```
 
