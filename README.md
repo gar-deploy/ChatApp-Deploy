@@ -38,8 +38,8 @@ This command will install all the dependencies specified in the `package.json` f
 3. **Set Up Environment Variables**:
     Create a `.env` file in the root directory of your project and set the following environment variables:
     ```
-    MONGODB_URI=<your_mongodb_connection_string>
-    JWT_SECRET=<your_jwt_secret_key>
+    MONGO_DB_URL =<your_mongodb_connection_string>
+    JWT_SECRET_KEY=<your_jwt_secret_key>
     ```
 
 4. **Run the Application**:
@@ -47,7 +47,7 @@ This command will install all the dependencies specified in the `package.json` f
     ```
     npm start
     ```
-    The application will run at `http://localhost:3000` by default.
+    The application will run at `http://localhost:5000` by default.
 
 ## Usage
 
